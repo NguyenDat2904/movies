@@ -1,0 +1,54 @@
+{
+  "Header": {
+    "genre": {
+      "hanh-dong": "Action",
+      "co-trang": "Historical",
+      "chien-tranh": "War",
+      "vien-tuong": "Science Fiction",
+      "kinh-di": "Horrified",
+      "tai-lieu": "Document",
+      "bi-an": "Secret",
+      "tinh-cam": "Romantic",
+      "hai-huoc": "Humorous",
+      "tam-ly": "Mentality",
+      "hinh-su": "Criminal",
+      "the-thao": "Sport",
+      "vo-thuat": "Martial Arts",
+      "phieu-luu": "Adventure",
+      "khoa-hoc": "Science",
+      "am-nhac": "Music",
+      "than-thoai": "Legend",
+      "gia-dinh": "Family",
+      "chinh-kich": "Drama",
+      "hoc-duong": "School",
+      "kinh-dien": "Classic",
+      "phim-18": "18+ Movies"
+    },
+    "nav": {
+      "Home": {
+        "name": "Home",
+        "url": ""
+      },
+      "Category": {
+        "name": "Category",
+        "url": "/categories"
+      },
+      "Nation": {
+        "name": "Nation",
+        "url": "/countries"
+      },
+      "NewMovies": {
+        "name": "New Movies",
+        "url": "/new"
+      },
+      "TheatersMovies": {
+        "name": "Theaters Movies",
+        "url": "/single"
+      },
+      "SeriesMovies": {
+        "name": "Series Movies",
+        "url": "/series"
+      }
+    }
+  }
+}

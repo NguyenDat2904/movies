@@ -1,33 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    font-family: "Mulish", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Mulish", sans-serif;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 15px;
+    font-family: "Mulish", sans-serif;
+    color: #3d3d3d;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0 0 15px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+    outline: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+    .container {
+        @apply px-4 mx-auto w-full;    
+    }
+    .row {
+        @apply flex flex-wrap -mx-4;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* swiper */
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 66px !important;
+    width: 66px !important;
+    background: #0b0c2a !important;
+    line-height: 66px !important;
+    text-align: center;
+    color: #ffffff !important;
+    line-height: 66px;
+    text-align: center;
+    transform: rotate(45deg);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.swiper-button-next{
+    right: -33px;
+}
+.swiper-button-prev{
+    left: -33px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    position: absolute;
+        top: 6px;
+        left: 0;
+        right: 0;
+        height: 54px;
+        width: 54px;
+        background: rgba(255, 255, 255, 0.1);
+        content: "";
+        z-index: -1;
+        margin: 0 auto;
+    /* Change the size of the arrow icons */
+}
+@keyframes identifier {
+
+    0%,
+    95% {
+        opacity: 0;
+        top: -100px;
+    }
+
+    5%,
+    95% {
+        opacity: 1;
+        top: 0;
+    }
+
+    100% {
+        opacity: 0;
+        top: -100px;
+    }
+}
+@keyframes identifierTitle {
+
+    0%,
+    88% {
+        opacity: 0;
+        top: -100px;
+    }
+
+    12%,
+    88% {
+        opacity: 1;
+        top: 0;
+    }
+
+    100% {
+        opacity: 0;
+        top: -100px;
+    }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.animate_banner{
+    animation: identifier 3.2s ease-out infinite;
+}
+.animate_banner_title{
+    animation: identifierTitle 3.2s ease-out infinite;
+}
+@keyframes identifierDesc {
+
+    0%,
+    81% {
+        opacity: 0;
+        top: -100px;
+    }
+
+    19%,
+    81% {
+        opacity: 1;
+        top: 0;
+    }
+
+        100% {
+            opacity: 0;
+            top: -100px;
+        }
+}
+
+.animate_banner_desc {
+    animation: identifierDesc 3.2s ease-out infinite;
+}
+@keyframes identifierButton {
+
+    0%,
+    75% {
+    opacity: 0;
+        top: -100px;
+    }
+
+    25%,
+    75% {
+    opacity: 1;
+    top: 0;
+    }
+
+    100% {
+        opacity: 0;
+        top: -100px;
+    }
+}
+
+.animate_banner_button {
+    animation: identifierButton 3.2s ease-out infinite;
 }

@@ -1,0 +1,54 @@
+{
+  "Header": {
+    "genre": {
+      "hanh-dong": "Hành động",
+      "co-trang": "Cổ Trang",
+      "chien-tranh": "Chiến Tranh",
+      "vien-tuong": "Viễn Tưởng",
+      "kinh-di": "Kinh Dị",
+      "tai-lieu": "Tài liệu",
+      "bi-an": "Bí ẩn",
+      "tinh-cam": "Tình Cảm",
+      "hai-huoc": "Hài Hước",
+      "tam-ly": "Tâm lý",
+      "hinh-su": "Hình sự",
+      "the-thao": "Thể thao",
+      "vo-thuat": "Võ thuật",
+      "phieu-luu": "Phiêu lưu",
+      "khoa-hoc": "Khoa học",
+      "am-nhac": "Âm nhạc",
+      "than-thoai": "Thần thoại",
+      "gia-dinh": "Gia đình",
+      "chinh-kich": "Chính kịch",
+      "hoc-duong": "Học đường",
+      "kinh-dien": "Kinh điển",
+      "phim-18": "Phim 18+"
+    },
+    "nav": {
+      "Home": {
+        "name": "Trang chủ",
+        "url": ""
+      },
+      "Category": {
+        "name": "Thể loại",
+        "url": "/categories"
+      },
+      "Nation": {
+        "name": "Quốc gia",
+        "url": "/countries"
+      },
+      "NewMovies": {
+        "name": "Phim mới",
+        "url": "/new"
+      },
+      "TheatersMovies": {
+        "name": "Phim lẻ",
+        "url": "/single"
+      },
+      "SeriesMovies": {
+        "name": "Phim bộ",
+        "url": "/series"
+      }
+    }
+  }
+}
